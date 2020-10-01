@@ -6,7 +6,10 @@ run-python-ios-tests:
   rules:
     - when: always
   tags:
+    - iPhone
     - mac
+    - unity
+    - xcode
   script:
     -sh ios_tests.sh
   artifacts:
