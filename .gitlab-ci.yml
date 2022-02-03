@@ -12,6 +12,7 @@ run-python-ios-tests:
     - xcode
   script:
     - chmod +x ./run-tests-ios.sh
+    - ./run-tests-ios.sh
   artifacts:
     when: always
     expire_in: 10 days
