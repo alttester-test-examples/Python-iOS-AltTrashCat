@@ -5,7 +5,7 @@ from .pages.main_menu_page import MainMenuPage
 class TestMainMenuPage(AltUnityTestCase):
 
     def setUp(self):
-        self.main_menu_page = MainMenuPage(self.altdriver)
+        self.main_menu_page = MainMenuPage(self.altdriver, self.appium_driver)
         self.main_menu_page.load()
 
     def test_main_menu_page_loaded_correctly(self):

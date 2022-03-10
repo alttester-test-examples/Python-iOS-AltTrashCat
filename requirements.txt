@@ -1,3 +1,8 @@
-altunityrunner~=1.7.0
+altunityrunner==1.7.0
+selenium
 pytest
+pytest-selenium
 pytest-html
+virtualenv
+Appium-Python-Client
+assertpy

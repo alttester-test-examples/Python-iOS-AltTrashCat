@@ -1,0 +1,574 @@
+2022-03-10 06:57:49:005 - [Appium] Welcome to Appium v1.22.2
+2022-03-10 06:57:49:007 - [Appium] Non-default server args:
+2022-03-10 06:57:49:007 - [Appium]   logTimestamp: true
+2022-03-10 06:57:49:007 - [Appium]   logNoColors: true
+2022-03-10 06:57:49:008 - [Appium]   defaultCommandTimeout: 180
+2022-03-10 06:57:49:008 - [Appium]   udid: 11b83a7112041f4ed0a49457b626f742422822f8
+2022-03-10 06:57:49:009 - [Appium] Deprecated server args:
+2022-03-10 06:57:49:009 - [Appium]   -U => --default-capabilities
+2022-03-10 06:57:49:009 - [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2022-03-10 06:57:49:009 - [Appium]   udid: 11b83a7112041f4ed0a49457b626f742422822f8
+2022-03-10 06:57:49:037 - [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2022-03-10 06:57:58:388 - [debug] [HTTP] Request idempotency key: 7abc3afd-37be-42e7-a422-7da11637ea44
+2022-03-10 06:57:58:411 - [HTTP] --> POST /wd/hub/session
+2022-03-10 06:57:58:411 - [HTTP] {"capabilities":{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]},"desiredCapabilities":{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 06:57:58:413 - [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"},null,{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]}]
+2022-03-10 06:57:58:416 - [debug] [BaseDriver] Event 'newSessionRequested' logged at 1646895478413 (08:57:58 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:57:58:419 - [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2022-03-10 06:57:58:419 - [BaseDriver]   udid
+2022-03-10 06:57:58:823 - [Appium] Appium v1.22.2 creating new XCUITestDriver (v3.59.0) session
+2022-03-10 06:57:58:826 - [debug] [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-03-10 06:57:58:826 - [debug] [BaseDriver] Creating session with W3C capabilities: {
+2022-03-10 06:57:58:826 - [debug] [BaseDriver]   "alwaysMatch": {
+2022-03-10 06:57:58:826 - [debug] [BaseDriver]     "platformName": "iOS",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:udid": "11b83a7112041f4ed0a49457b626f742422822f8",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:deviceName": "Local Device",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:app": "/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:automationName": "XCUITest",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:xcodeorgid": "59ESG8ELF5",
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     "appium:xcodesignid": "iPhone Developer"
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]   },
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]   "firstMatch": [
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]     {}
+2022-03-10 06:57:58:827 - [debug] [BaseDriver]   ]
+2022-03-10 06:57:58:827 - [debug] [BaseDriver] }
+2022-03-10 06:57:58:847 - [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2022-03-10 06:57:58:847 - [BaseDriver]   xcodeorgid
+2022-03-10 06:57:58:847 - [BaseDriver]   xcodesignid
+2022-03-10 06:57:58:848 - [XCUITest] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+2022-03-10 06:57:58:848 - [BaseDriver] Session created with session id: c15c8e2e-a633-4b1e-b601-568c09c842ed
+2022-03-10 06:57:58:873 - [debug] [XCUITest] Current user: 'altunitytester'
+2022-03-10 06:57:58:890 - [debug] [XCUITest] Available devices: 11b83a7112041f4ed0a49457b626f742422822f8
+2022-03-10 06:57:58:890 - [debug] [XCUITest] Creating iDevice object with udid '11b83a7112041f4ed0a49457b626f742422822f8'
+2022-03-10 06:57:58:890 - [XCUITest] Determining device to run tests on: udid: '11b83a7112041f4ed0a49457b626f742422822f8', real device: true
+2022-03-10 06:57:58:958 - [XCUITest] No platformVersion specified. Using device version: '12.5.5'
+2022-03-10 06:57:58:959 - [XCUITest] Normalized platformVersion capability value '12.5.5' to '12.5'
+2022-03-10 06:57:58:990 - [debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1646895478990 (08:57:58 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:57:59:002 - [BaseDriver] Using local app '/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa'
+2022-03-10 06:57:59:266 - [debug] [BaseDriver] Unzipping '/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa'
+2022-03-10 06:57:59:267 - [debug] [BaseDriver] Enforcing UTF-8 encoding on the extracted file names for 'TrashCat.ipa'
+dbug Support Found '%s' at '%s'
+dbug Support unzip
+dbug Support /usr/bin/unzip
+2022-03-10 06:58:00:477 - [debug] [BaseDriver] Extracted 1 bundle item from '/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa' in 1210ms: Payload/TrashCat.app
+2022-03-10 06:58:00:477 - [BaseDriver] Assuming 'Payload/TrashCat.app' is the correct bundle
+2022-03-10 06:58:00:481 - [BaseDriver] Unzipped local app to '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 06:58:00:481 - [debug] [BaseDriver] Event 'appConfigured' logged at 1646895480481 (08:58:00 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:00:482 - [debug] [XCUITest] Checking whether app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' is actually present on file system
+2022-03-10 06:58:00:482 - [debug] [XCUITest] App is present
+2022-03-10 06:58:00:486 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 06:58:00:486 - [debug] [BaseDriver] Event 'resetStarted' logged at 1646895480486 (08:58:00 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:00:486 - [debug] [XCUITest] Reset: running ios real device reset flow
+2022-03-10 06:58:00:486 - [debug] [BaseDriver] Event 'resetComplete' logged at 1646895480486 (08:58:00 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:00:487 - [WebDriverAgent] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+2022-03-10 06:58:00:487 - [WebDriverAgent] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2022-03-10 06:58:00:756 - [debug] [XCUITest] Crash reports root '/Users/altunitytester/Library/Logs/CrashReporter/MobileDevice/iPhone6' does not exist. Got nothing to gather.
+2022-03-10 06:58:00:756 - [debug] [BaseDriver] Event 'logCaptureStarted' logged at 1646895480756 (08:58:00 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:00:756 - [XCUITest] Setting up real device
+2022-03-10 06:58:00:756 - [debug] [XCUITest] Verifying application platform
+2022-03-10 06:58:00:759 - [debug] [XCUITest] CFBundleSupportedPlatforms: ["iPhoneOS"]
+2022-03-10 06:58:00:924 - [debug] [XCUITest] Reset requested. Removing app with id 'fi.altom.trashcat' from the device
+2022-03-10 06:58:01:296 - [debug] [XCUITest] Installing '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' on device with UUID '11b83a7112041f4ed0a49457b626f742422822f8'...
+2022-03-10 06:58:01:297 - [debug] [XCUITest] Using 'serial' app deployment strategy. You could change it by providing another value to the 'appInstallStrategy' capability
+2022-03-10 06:58:01:730 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 06:58:01:754 - [debug] [XCUITest] Successfully scanned the tree structure of '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 06:58:01:759 - [debug] [XCUITest] Got 27 folders and 126 files to push
+2022-03-10 06:58:02:187 - [debug] [XCUITest] Successfully created the remote folder structure (28 items)
+2022-03-10 06:58:02:187 - [debug] [XCUITest] Proceeding to serial files push
+2022-03-10 06:58:04:178 - [debug] [WebDriverAgent] Parsed BUILD_DIR configuration value: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Build/Products'
+2022-03-10 06:58:04:178 - [debug] [WebDriverAgent] Got derived data root: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu'
+2022-03-10 06:58:21:449 - [debug] [XCUITest] Successfully pushed 27 folders and 126 files within 19718ms
+2022-03-10 06:58:21:928 - [debug] [XCUITest] A new application installation is going to be performed
+2022-03-10 06:58:22:737 - [XCUITest] App installation succeeded after 21440ms
+2022-03-10 06:58:22:737 - [debug] [XCUITest] The app has been installed successfully.
+2022-03-10 06:58:22:738 - [debug] [BaseDriver] Event 'appInstalled' logged at 1646895502738 (08:58:22 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:22:787 - [debug] [WebDriverAgent] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+2022-03-10 06:58:22:788 - [DevCon Factory] Requesting connection for device 11b83a7112041f4ed0a49457b626f742422822f8 on local port 8100, device port 8100
+2022-03-10 06:58:22:788 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 06:58:22:792 - [DevCon Factory] Successfully requested the connection for 11b83a7112041f4ed0a49457b626f742422822f8:8100
+2022-03-10 06:58:22:794 - [debug] [XCUITest] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2022-03-10 06:58:22:797 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:22:798 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:22:819 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:22:820 - [WD Proxy] socket hang up
+2022-03-10 06:58:22:821 - [debug] [WebDriverAgent] WDA is not listening at 'http://127.0.0.1:8100/'
+2022-03-10 06:58:22:822 - [debug] [WebDriverAgent] WDA is currently not running. There is nothing to cache
+2022-03-10 06:58:22:822 - [debug] [XCUITest] Trying to start WebDriverAgent 1 times with 10000ms interval
+2022-03-10 06:58:22:822 - [debug] [XCUITest] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2022-03-10 06:58:22:822 - [debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1646895502822 (08:58:22 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:22:822 - [WebDriverAgent] Launching WebDriverAgent on the device
+2022-03-10 06:58:22:827 - [WebDriverAgent] WebDriverAgent does not need a cleanup. The sources are up to date (1645089217065 >= 1645089217065)
+2022-03-10 06:58:22:827 - [debug] [WebDriverAgent] Killing running processes 'xcodebuild.*11b83a7112041f4ed0a49457b626f742422822f8' for the device 11b83a7112041f4ed0a49457b626f742422822f8...
+2022-03-10 06:58:22:859 - [debug] [WebDriverAgent] 'pgrep -if xcodebuild.*11b83a7112041f4ed0a49457b626f742422822f8' didn't detect any matching processes. Return code: 1
+2022-03-10 06:58:22:861 - [debug] [WebDriverAgent] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -derivedDataPath /Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu -destination id=11b83a7112041f4ed0a49457b626f742422822f8 IPHONEOS_DEPLOYMENT_TARGET=12.5 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+2022-03-10 06:58:22:862 - [debug] [WebDriverAgent] Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+2022-03-10 06:58:23:831 - [debug] [WebDriverAgent] Waiting up to 60000ms for WebDriverAgent to start
+2022-03-10 06:58:23:832 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:23:832 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:23:872 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:23:873 - [WD Proxy] socket hang up
+2022-03-10 06:58:24:873 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:24:874 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:24:879 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:24:880 - [WD Proxy] socket hang up
+2022-03-10 06:58:25:880 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:25:881 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:25:886 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:25:886 - [WD Proxy] socket hang up
+2022-03-10 06:58:26:886 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:26:887 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:26:893 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:26:893 - [WD Proxy] socket hang up
+2022-03-10 06:58:27:894 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:27:894 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:27:900 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:27:901 - [WD Proxy] socket hang up
+2022-03-10 06:58:28:851 - [Xcode] 2022-03-10 08:58:28.851 xcodebuild[1111:9888]  DTDKRemoteDeviceConnection: Failed to start remote service "com.apple.instruments.remoteserver.DVTSecureSocketProxy" on device. Error: Error Domain=com.apple.dtdevicekit Code=811 "Failed to start remote service "com.apple.instruments.remoteserver.DVTSecureSocketProxy" on device." UserInfo={NSUnderlyingError=0x600003d8ac70 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402653150 "The service is invalid." UserInfo={MobileDeviceErrorCode=(0xE8000022), com.apple.dtdevicekit.stacktrace=(
+2022-03-10 06:58:28:852 - [Xcode] 	0   DTDeviceKitBase                     0x0000000119ae1316 DTDKCreateNSErrorFromAMDErrorCode + 220
+2022-03-10 06:58:28:852 - [Xcode] 	1   DTDeviceKitBase                     0x0000000119af0ea4 __63-[DTDKRemoteDeviceConnection startFirstServiceOf:unlockKeybag:]_block_invoke + 625
+2022-03-10 06:58:28:852 - [Xcode] 	2   DTDeviceKitBase                     0x0000000119af059a __48-[DTDKRemoteDeviceConnection futureWithSession:]_block_invoke_3 + 22
+2022-03-10 06:58:28:852 - [Xcode] 	3   DTDeviceKitBase                     0x0000000119ae3634 __DTDKExecuteInSession_block_invoke_2 + 35
+2022-03-10 06:58:28:852 - [Xcode] 	4   DTDeviceKitBase                     0x0000000119ae2cd9 __DTDKExecuteWithConnection_block_invoke_2 + 218
+2022-03-10 06:58:28:852 - [Xcode] 	5   DTDeviceKitBase                     0x0000000119ae2bd6 __DTDKExecuteWithConnection_block_invoke + 106
+2022-03-10 06:58:28:852 - [Xcode] 	6   libdispatch.dylib                   0x00007ff8068a7cc9 _dispatch_client_callout + 8
+2022-03-10 06:58:28:852 - [Xcode] 	7   libdispatch.dylib                   0x00007ff8068b54a1 _dispatch_sync_invoke_and_complete_recurse + 65
+2022-03-10 06:58:28:852 - [Xcode] 	8   libdispatch.dylib                   0x00007ff8068b4ffd _dispatch_sync_f_slow + 194
+2022-03-10 06:58:28:852 - [Xcode] 	9   DVTFoundation                       0x000000010713cdf2 DVTDispatchBarrierSync + 208
+2022-03-10 06:58:28:853 - [Xcode] 	10  DVTFoundation                       0x00000001071112d6 -[DVTDispatchLock performLockedBlock:] + 60
+2022-03-10 06:58:28:853 - [Xcode] 	11  DTDeviceKitBase                     0x0000000119ae2ad9 DTDKExecuteWithConnection + 226
+2022-03-10 06:58:28:853 - [Xcode] 	12  DTDeviceKitBase                     0x0000000119ae34da DTDKExecuteInSession + 239
+2022-03-10 06:58:28:853 - [Xcode] 	13  DTDeviceKitBase                     0x0000000119af03ec __48-[DTDKRemoteDeviceConnection futureWithSession:]_block_invoke_2 + 131
+2022-03-10 06:58:28:853 - [Xcode] 	14  DVTFoundation                       0x000000010713ac37 __DVT_CALLING_CLIENT_BLOCK__ + 7
+2022-03-10 06:58:28:853 - [Xcode] 	15  DVTFoundation                       0x000000010713c3a3 __DVTDispatchAsync_block_invoke + 931
+2022-03-10 06:58:28:853 - [Xcode] 	16  libdispatch.dylib                   0x00007ff8068a6ad8 _dispatch_call_block_and_release + 12
+2022-03-10 06:58:28:853 - [Xcode] 	17  libdispatch.dylib                   0x00007ff8068a7cc9 _dispatch_client_callout + 8
+2022-03-10 06:58:28:853 - [Xcode] 	18  libdispatch.dylib                   0x00007ff8068adcee _dispatch_lane_serial_drain + 696
+2022-03-10 06:58:28:853 - [Xcode] 	19  libdispatch.dylib                   0x00007ff8068ae7fb _dispatch_lane_invoke + 417
+2022-03-10 06:58:28:853 - [Xcode] 	20  libdispatch.dylib                   0x00007ff8068b87e1 _dispatch_workloop_worker_thread + 758
+2022-03-10 06:58:28:853 - [Xcode] 	21  libsystem_pthread.dylib             0x00007ff806a5b074 _pthread_wqthread + 326
+2022-03-10 06:58:28:853 - [Xcode] 	22  libsystem_pthread.dylib             0x00007ff806a59ffb start_wqthread + 15
+2022-03-10 06:58:28:853 - [Xcode] ), DVTRadarComponentKey=261622, NSLocalizedDescription=The service is invalid.}}, NSLocalizedRecoverySuggestion=Please check your connection to your device., DVTRadarComponentKey=261622, NSLocalizedDescription=Failed to start remote service "com.apple.instruments.remoteserver.DVTSecureSocketProxy" on device.}
+2022-03-10 06:58:28:854 - [Xcode] 
+2022-03-10 06:58:28:854 - [Xcode] 2022-03-10 08:58:28.852 xcodebuild[1111:9857]  DTDKRemoteDeviceConnection: Unable to start com.apple.instruments.remoteserver.DVTSecureSocketProxy on device “11b83a7112041f4ed0a49457b626f742422822f8”. Falling back to service without proxy.
+2022-03-10 06:58:28:855 - [Xcode] 
+2022-03-10 06:58:28:901 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:28:902 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:28:907 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:28:908 - [WD Proxy] socket hang up
+2022-03-10 06:58:29:908 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:29:908 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:29:914 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:29:915 - [WD Proxy] socket hang up
+2022-03-10 06:58:30:263 - [Xcode] 2022-03-10 08:58:30.345604+0200 WebDriverAgentRunner-Runner[840:240298] Running tests...
+2022-03-10 06:58:30:263 - [Xcode] 
+2022-03-10 06:58:30:916 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:30:916 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:30:921 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:30:922 - [WD Proxy] socket hang up
+2022-03-10 06:58:31:531 - [Xcode] Test Suite 'All tests' started at 2022-03-10 08:58:31.615
+2022-03-10 06:58:31:531 - [Xcode] 
+2022-03-10 06:58:31:544 - [Xcode] Test Suite 'WebDriverAgentRunner.xctest' started at 2022-03-10 08:58:31.629
+2022-03-10 06:58:31:544 - [Xcode] 
+2022-03-10 06:58:31:551 - [Xcode] Test Suite 'UITestingUITests' started at 2022-03-10 08:58:31.635
+2022-03-10 06:58:31:551 - [Xcode] 
+2022-03-10 06:58:31:560 - [Xcode]     t =      nans Suite Set Up
+2022-03-10 06:58:31:560 - [Xcode] 
+2022-03-10 06:58:31:575 - [Xcode] 2022-03-10 08:58:31.659467+0200 WebDriverAgentRunner-Runner[840:240298] [MC] System group container for systemgroup.com.apple.configurationprofiles path is /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+2022-03-10 06:58:31:575 - [Xcode] 
+2022-03-10 06:58:31:646 - [Xcode] 2022-03-10 08:58:31.728030+0200 WebDriverAgentRunner-Runner[840:240439] [MC] Invalidating cache
+2022-03-10 06:58:31:647 - [Xcode] 
+2022-03-10 06:58:31:701 - [Xcode] 2022-03-10 08:58:31.785674+0200 WebDriverAgentRunner-Runner[840:240298] [MC] Reading from public effective user settings.
+2022-03-10 06:58:31:701 - [Xcode] 
+2022-03-10 06:58:31:717 - [Xcode] 2022-03-10 08:58:31.802471+0200 WebDriverAgentRunner-Runner[840:240298] [User Defaults] Couldn't write value for key KeyboardAutocorrection in CFPrefsPlistSource<0x2839bf700> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2022-03-10 06:58:31:718 - [Xcode] 
+2022-03-10 06:58:31:795 - [Xcode] 2022-03-10 08:58:31.878932+0200 WebDriverAgentRunner-Runner[840:240436] [MC] Invalidating cache
+2022-03-10 06:58:31:796 - [Xcode] 
+2022-03-10 06:58:31:803 - [Xcode] 2022-03-10 08:58:31.889168+0200 WebDriverAgentRunner-Runner[840:240298] [MC] Reading from public effective user settings.
+2022-03-10 06:58:31:803 - [Xcode] 
+2022-03-10 06:58:31:807 - [Xcode] 2022-03-10 08:58:31.893084+0200 WebDriverAgentRunner-Runner[840:240298] [User Defaults] Couldn't write value for key KeyboardPrediction in CFPrefsPlistSource<0x2839bf700> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2022-03-10 06:58:31:807 - [Xcode] 
+2022-03-10 06:58:31:810 - [Xcode] 2022-03-10 08:58:31.896152+0200 WebDriverAgentRunner-Runner[840:240298] [User Defaults] Couldn't write value for key KeyboardShowPredictionBar in CFPrefsPlistSource<0x2839bf700> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2022-03-10 06:58:31:810 - [Xcode] 
+2022-03-10 06:58:31:823 - [Xcode] 2022-03-10 08:58:31.908763+0200 WebDriverAgentRunner-Runner[840:240298] [User Defaults] Couldn't write value for key DidShowGestureKeyboardIntroduction in CFPrefsPlistSource<0x2839bf700> (Domain: com.apple.Preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No): setting preferences outside an application's container requires user-preference-write or file-write-data sandbox access
+2022-03-10 06:58:31:823 - [Xcode] 
+2022-03-10 06:58:31:838 - [Xcode] Test Case '-[UITestingUITests testRunner]' started.
+2022-03-10 06:58:31:838 - [Xcode] 
+2022-03-10 06:58:31:852 - [Xcode]     t =     0.01s Start Test at 2022-03-10 08:58:31.938
+2022-03-10 06:58:31:852 - [Xcode] 
+2022-03-10 06:58:31:868 - [Xcode]     t =     0.02s Set Up
+2022-03-10 06:58:31:868 - [Xcode] 
+2022-03-10 06:58:31:890 - [Xcode] 2022-03-10 08:58:31.975601+0200 WebDriverAgentRunner-Runner[840:240298] Built at Mar  8 2022 16:17:15
+2022-03-10 06:58:31:890 - [Xcode] 
+2022-03-10 06:58:31:923 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:31:923 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:31:927 - [debug] [iProxy@11b83a71:8100] Connection was refused to port 8100
+2022-03-10 06:58:31:928 - [WD Proxy] socket hang up
+2022-03-10 06:58:32:041 - [Xcode] 2022-03-10 08:58:32.126028+0200 WebDriverAgentRunner-Runner[840:240298] ServerURLHere->http://192.168.1.105:8100<-ServerURLHere
+2022-03-10 06:58:32:041 - [Xcode] 
+2022-03-10 06:58:32:051 - [Xcode] 2022-03-10 08:58:32.137141+0200 WebDriverAgentRunner-Runner[840:240438] Using singleton test manager
+2022-03-10 06:58:32:051 - [Xcode] 
+2022-03-10 06:58:32:930 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:58:32:930 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:58:32:951 - [debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":26,"name":"iOS","sdkVersion":"15.0","version":"12.5.5"},"ios":{"ip":"192.168.1.105"},"ready":true,"build":{"upgradedAt":"1645089217065","time":"Mar  8 2022 16:17:16","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+2022-03-10 06:58:32:951 - [debug] [WebDriverAgent] WebDriverAgent information:
+2022-03-10 06:58:32:951 - [debug] [WebDriverAgent] {
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "message": "WebDriverAgent is ready to accept commands",
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "state": "success",
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "os": {
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "testmanagerdVersion": 26,
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "name": "iOS",
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "sdkVersion": "15.0",
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "version": "12.5.5"
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   },
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "ios": {
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "ip": "192.168.1.105"
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   },
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "ready": true,
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]   "build": {
+2022-03-10 06:58:32:952 - [debug] [WebDriverAgent]     "upgradedAt": "1645089217065",
+2022-03-10 06:58:32:953 - [debug] [WebDriverAgent]     "time": "Mar  8 2022 16:17:16",
+2022-03-10 06:58:32:953 - [debug] [WebDriverAgent]     "productBundleIdentifier": "com.facebook.WebDriverAgentRunner"
+2022-03-10 06:58:32:953 - [debug] [WebDriverAgent]   }
+2022-03-10 06:58:32:953 - [debug] [WebDriverAgent] }
+2022-03-10 06:58:32:953 - [debug] [WebDriverAgent] WebDriverAgent successfully started after 10090ms
+2022-03-10 06:58:32:953 - [debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1646895512953 (08:58:32 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:32:953 - [debug] [XCUITest] Sending createSession command to WDA
+2022-03-10 06:58:32:954 - [debug] [WD Proxy] Matched '/session' to command name 'createSession'
+2022-03-10 06:58:32:954 - [debug] [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"fi.altom.trashcat","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+2022-03-10 06:58:32:986 - [Xcode]     t =     1.14s Open fi.altom.trashcat
+2022-03-10 06:58:32:986 - [Xcode] 
+2022-03-10 06:58:32:990 - [Xcode]     t =     1.14s     Launch fi.altom.trashcat
+2022-03-10 06:58:32:990 - [Xcode] 
+2022-03-10 06:58:33:376 - [Xcode] 2022-03-10 08:58:33.461678+0200 WebDriverAgentRunner-Runner[840:240298] Waiting up to 10s until fi.altom.trashcat is in idle state (including animations)
+2022-03-10 06:58:33:376 - [Xcode] 
+2022-03-10 06:58:33:377 - [Xcode]     t =     1.53s         Wait for fi.altom.trashcat to idle
+2022-03-10 06:58:33:377 - [Xcode] 
+2022-03-10 06:58:41:032 - [Xcode] 2022-03-10 08:58:41.084828+0200 WebDriverAgentRunner-Runner[840:240298] Getting the most recent active application (out of 1 total items)
+2022-03-10 06:58:41:033 - [Xcode] 
+2022-03-10 06:58:41:034 - [Xcode]     t =     9.18s Find the Application 'fi.altom.trashcat'
+2022-03-10 06:58:41:034 - [Xcode] 
+2022-03-10 06:58:41:040 - [Xcode]     t =     9.19s     Requesting snapshot of accessibility hierarchy for app with pid 843
+2022-03-10 06:58:41:040 - [Xcode] 
+2022-03-10 06:58:41:117 - [debug] [WD Proxy] Got response with status 200: {"value":{"sessionId":"5C5A71A8-498B-49DA-82B0-74C9B72E5C19","capabilities":{"device":"iphone","browserName":"TrashCat","sdkVersion":"12.5.5","CFBundleIdentifier":"fi.altom.trashcat"}},"sessionId":"5C5A71A8-498B-49DA-82B0-74C9B72E5C19"}
+2022-03-10 06:58:41:118 - [WD Proxy] Determined the downstream protocol as 'W3C'
+2022-03-10 06:58:41:118 - [debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1646895521118 (08:58:41 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:41:118 - [debug] [BaseDriver] Event 'wdaStarted' logged at 1646895521118 (08:58:41 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:41:118 - [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2022-03-10 06:58:41:119 - [debug] [BaseDriver] Event 'orientationSet' logged at 1646895521119 (08:58:41 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:41:119 - [debug] [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+2022-03-10 06:58:41:119 - [debug] [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+2022-03-10 06:58:41:120 - [Appium] New XCUITestDriver session created successfully, session c15c8e2e-a633-4b1e-b601-568c09c842ed added to master session list
+2022-03-10 06:58:41:120 - [debug] [BaseDriver] Event 'newSessionStarted' logged at 1646895521120 (08:58:41 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:58:41:121 - [debug] [W3C (c15c8e2e)] Cached the protocol value 'W3C' for the new session c15c8e2e-a633-4b1e-b601-568c09c842ed
+2022-03-10 06:58:41:121 - [debug] [W3C (c15c8e2e)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","udid":"11b83a7112041f4ed0a49457b626f742422822f8","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 06:58:41:126 - [HTTP] <-- POST /wd/hub/session 200 42713 ms - 536
+2022-03-10 06:58:41:126 - [HTTP] 
+2022-03-10 06:59:32:210 - [HTTP] --> DELETE /wd/hub/session/c15c8e2e-a633-4b1e-b601-568c09c842ed
+2022-03-10 06:59:32:211 - [HTTP] {}
+2022-03-10 06:59:32:213 - [debug] [W3C (c15c8e2e)] Calling AppiumDriver.deleteSession() with args: ["c15c8e2e-a633-4b1e-b601-568c09c842ed"]
+2022-03-10 06:59:32:213 - [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1646895572213 (08:59:32 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:32:214 - [Appium] Removing session c15c8e2e-a633-4b1e-b601-568c09c842ed from our master session list
+2022-03-10 06:59:32:217 - [debug] [WD Proxy] Matched '/session/c15c8e2e-a633-4b1e-b601-568c09c842ed' to command name 'deleteSession'
+2022-03-10 06:59:32:217 - [debug] [WD Proxy] Proxying [DELETE /session/c15c8e2e-a633-4b1e-b601-568c09c842ed] to [DELETE http://127.0.0.1:8100/session/5C5A71A8-498B-49DA-82B0-74C9B72E5C19] with no body
+2022-03-10 06:59:32:527 - [Xcode]     t =    60.67s Terminate fi.altom.trashcat:843
+2022-03-10 06:59:32:527 - [Xcode] 
+2022-03-10 06:59:33:607 - [Xcode]     t =    61.76s Wait for fi.altom.trashcat to become Not Running
+2022-03-10 06:59:33:607 - [Xcode] 
+2022-03-10 06:59:33:611 - [debug] [WD Proxy] Got response with status 200: {"value":null,"sessionId":null}
+2022-03-10 06:59:33:611 - [DevCon Factory] Releasing connections for 11b83a7112041f4ed0a49457b626f742422822f8 device on any port number
+2022-03-10 06:59:33:612 - [DevCon Factory] Found cached connections to release: ["11b83a7112041f4ed0a49457b626f742422822f8:8100"]
+2022-03-10 06:59:33:612 - [DevCon Factory] Releasing the listener for '11b83a7112041f4ed0a49457b626f742422822f8:8100'
+2022-03-10 06:59:33:613 - [debug] [iProxy@11b83a71:8100] Closing the connection
+2022-03-10 06:59:33:613 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 06:59:33:613 - [debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+2022-03-10 06:59:33:614 - [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1646895573614 (08:59:33 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:33:614 - [debug] [W3C (c15c8e2e)] Received response: null
+2022-03-10 06:59:33:614 - [debug] [W3C (c15c8e2e)] But deleting session, so not returning
+2022-03-10 06:59:33:614 - [debug] [W3C (c15c8e2e)] Responding to client with driver.deleteSession() result: null
+2022-03-10 06:59:33:616 - [HTTP] <-- DELETE /wd/hub/session/c15c8e2e-a633-4b1e-b601-568c09c842ed 200 1405 ms - 14
+2022-03-10 06:59:33:616 - [HTTP] 
+2022-03-10 06:59:33:623 - [debug] [HTTP] Request idempotency key: 96f4ac4d-504e-4eb0-b058-b662243eedb1
+2022-03-10 06:59:33:629 - [HTTP] --> POST /wd/hub/session
+2022-03-10 06:59:33:629 - [HTTP] {"capabilities":{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]},"desiredCapabilities":{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 06:59:33:636 - [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"},null,{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]}]
+2022-03-10 06:59:33:637 - [debug] [BaseDriver] Event 'newSessionRequested' logged at 1646895573637 (08:59:33 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:33:640 - [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2022-03-10 06:59:33:640 - [BaseDriver]   udid
+2022-03-10 06:59:33:642 - [Appium] Appium v1.22.2 creating new XCUITestDriver (v3.59.0) session
+2022-03-10 06:59:33:643 - [debug] [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-03-10 06:59:33:644 - [debug] [BaseDriver] Creating session with W3C capabilities: {
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]   "alwaysMatch": {
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "platformName": "iOS",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:udid": "11b83a7112041f4ed0a49457b626f742422822f8",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:deviceName": "Local Device",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:app": "/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:automationName": "XCUITest",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:xcodeorgid": "59ESG8ELF5",
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     "appium:xcodesignid": "iPhone Developer"
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]   },
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]   "firstMatch": [
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]     {}
+2022-03-10 06:59:33:644 - [debug] [BaseDriver]   ]
+2022-03-10 06:59:33:644 - [debug] [BaseDriver] }
+2022-03-10 06:59:33:653 - [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2022-03-10 06:59:33:653 - [BaseDriver]   xcodeorgid
+2022-03-10 06:59:33:653 - [BaseDriver]   xcodesignid
+2022-03-10 06:59:33:653 - [XCUITest] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+2022-03-10 06:59:33:654 - [BaseDriver] Session created with session id: 199fb07f-68e8-42c5-a267-f0db15841b65
+2022-03-10 06:59:33:669 - [debug] [XCUITest] Current user: 'altunitytester'
+2022-03-10 06:59:33:671 - [debug] [XCUITest] Available devices: 11b83a7112041f4ed0a49457b626f742422822f8
+2022-03-10 06:59:33:672 - [debug] [XCUITest] Creating iDevice object with udid '11b83a7112041f4ed0a49457b626f742422822f8'
+2022-03-10 06:59:33:672 - [XCUITest] Determining device to run tests on: udid: '11b83a7112041f4ed0a49457b626f742422822f8', real device: true
+2022-03-10 06:59:33:730 - [XCUITest] No platformVersion specified. Using device version: '12.5.5'
+2022-03-10 06:59:33:731 - [XCUITest] Normalized platformVersion capability value '12.5.5' to '12.5'
+2022-03-10 06:59:33:746 - [debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1646895573739 (08:59:33 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:33:747 - [BaseDriver] Using local app '/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa'
+2022-03-10 06:59:34:055 - [BaseDriver] Will reuse previously cached application at '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 06:59:34:056 - [debug] [BaseDriver] Event 'appConfigured' logged at 1646895574056 (08:59:34 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:34:056 - [debug] [XCUITest] Checking whether app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' is actually present on file system
+2022-03-10 06:59:34:056 - [debug] [XCUITest] App is present
+2022-03-10 06:59:34:061 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 06:59:34:061 - [debug] [BaseDriver] Event 'resetStarted' logged at 1646895574061 (08:59:34 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:34:061 - [debug] [XCUITest] Reset: running ios real device reset flow
+2022-03-10 06:59:34:061 - [debug] [BaseDriver] Event 'resetComplete' logged at 1646895574061 (08:59:34 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:34:062 - [WebDriverAgent] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+2022-03-10 06:59:34:062 - [WebDriverAgent] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2022-03-10 06:59:34:293 - [debug] [XCUITest] Crash reports root '/Users/altunitytester/Library/Logs/CrashReporter/MobileDevice/iPhone6' does not exist. Got nothing to gather.
+2022-03-10 06:59:34:293 - [debug] [BaseDriver] Event 'logCaptureStarted' logged at 1646895574293 (08:59:34 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:34:294 - [XCUITest] Setting up real device
+2022-03-10 06:59:34:294 - [debug] [XCUITest] Verifying application platform
+2022-03-10 06:59:34:296 - [debug] [XCUITest] CFBundleSupportedPlatforms: ["iPhoneOS"]
+2022-03-10 06:59:34:563 - [debug] [XCUITest] Reset requested. Removing app with id 'fi.altom.trashcat' from the device
+2022-03-10 06:59:35:035 - [debug] [XCUITest] Installing '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' on device with UUID '11b83a7112041f4ed0a49457b626f742422822f8'...
+2022-03-10 06:59:35:035 - [debug] [XCUITest] Using 'serial' app deployment strategy. You could change it by providing another value to the 'appInstallStrategy' capability
+2022-03-10 06:59:35:516 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 06:59:35:538 - [debug] [XCUITest] Successfully scanned the tree structure of '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 06:59:35:539 - [debug] [XCUITest] Got 27 folders and 126 files to push
+2022-03-10 06:59:36:569 - [debug] [XCUITest] Successfully created the remote folder structure (28 items)
+2022-03-10 06:59:36:569 - [debug] [XCUITest] Proceeding to serial files push
+2022-03-10 06:59:36:684 - [debug] [WebDriverAgent] Parsed BUILD_DIR configuration value: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Build/Products'
+2022-03-10 06:59:36:685 - [debug] [WebDriverAgent] Got derived data root: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu'
+2022-03-10 06:59:55:564 - [debug] [XCUITest] Successfully pushed 27 folders and 126 files within 20047ms
+2022-03-10 06:59:56:010 - [debug] [XCUITest] A new application installation is going to be performed
+2022-03-10 06:59:57:474 - [XCUITest] App installation succeeded after 22439ms
+2022-03-10 06:59:57:475 - [debug] [XCUITest] The app has been installed successfully.
+2022-03-10 06:59:57:475 - [debug] [BaseDriver] Event 'appInstalled' logged at 1646895597475 (08:59:57 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:57:536 - [debug] [WebDriverAgent] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+2022-03-10 06:59:57:536 - [DevCon Factory] Requesting connection for device 11b83a7112041f4ed0a49457b626f742422822f8 on local port 8100, device port 8100
+2022-03-10 06:59:57:537 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 06:59:57:541 - [DevCon Factory] Successfully requested the connection for 11b83a7112041f4ed0a49457b626f742422822f8:8100
+2022-03-10 06:59:57:542 - [debug] [XCUITest] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2022-03-10 06:59:57:544 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:59:57:544 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:59:57:561 - [debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":26,"name":"iOS","sdkVersion":"15.0","version":"12.5.5"},"ios":{"ip":"192.168.1.105"},"ready":true,"build":{"upgradedAt":"1645089217065","time":"Mar  8 2022 16:17:16","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+2022-03-10 06:59:57:562 - [debug] [WebDriverAgent] Upgrade timestamp of the currently bundled WDA: 1645089217065
+2022-03-10 06:59:57:562 - [debug] [WebDriverAgent] Upgrade timestamp of the WDA on the device: 1645089217065
+2022-03-10 06:59:57:562 - [WebDriverAgent] Will reuse previously cached WDA instance at 'http://127.0.0.1:8100/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8100 if this is an undesired behavior.
+2022-03-10 06:59:57:563 - [debug] [XCUITest] Trying to start WebDriverAgent 1 times with 10000ms interval
+2022-03-10 06:59:57:563 - [debug] [XCUITest] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2022-03-10 06:59:57:563 - [debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1646895597563 (08:59:57 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:57:563 - [WebDriverAgent] Using provided WebdriverAgent at 'http://127.0.0.1:8100/'
+2022-03-10 06:59:57:564 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 06:59:57:564 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 06:59:57:571 - [debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":26,"name":"iOS","sdkVersion":"15.0","version":"12.5.5"},"ios":{"ip":"192.168.1.105"},"ready":true,"build":{"upgradedAt":"1645089217065","time":"Mar  8 2022 16:17:16","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+2022-03-10 06:59:57:571 - [debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1646895597571 (08:59:57 GMT+0200 (Eastern European Standard Time))
+2022-03-10 06:59:57:571 - [debug] [XCUITest] Sending createSession command to WDA
+2022-03-10 06:59:57:572 - [debug] [WD Proxy] Matched '/session' to command name 'createSession'
+2022-03-10 06:59:57:573 - [debug] [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"fi.altom.trashcat","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+2022-03-10 06:59:57:594 - [Xcode]     t =    85.74s Open fi.altom.trashcat
+2022-03-10 06:59:57:595 - [Xcode] 
+2022-03-10 06:59:57:595 - [Xcode]     t =    85.74s     Launch fi.altom.trashcat
+2022-03-10 06:59:57:596 - [Xcode] 
+2022-03-10 06:59:58:083 - [Xcode] 2022-03-10 08:59:58.118260+0200 WebDriverAgentRunner-Runner[840:240298] Waiting up to 10s until fi.altom.trashcat is in idle state (including animations)
+2022-03-10 06:59:58:088 - [Xcode] 
+2022-03-10 06:59:58:089 - [Xcode]     t =    86.19s         Wait for fi.altom.trashcat to idle
+2022-03-10 06:59:58:089 - [Xcode] 
+2022-03-10 07:00:03:679 - [iProxy@11b83a71:8100] The connection has been closed
+2022-03-10 07:00:06:885 - [Xcode] 2022-03-10 09:00:06.970729+0200 WebDriverAgentRunner-Runner[840:240298] Getting the most recent active application (out of 1 total items)
+2022-03-10 07:00:06:885 - [Xcode] 
+2022-03-10 07:00:06:891 - [Xcode]     t =    95.04s Find the Application 'fi.altom.trashcat'
+2022-03-10 07:00:06:891 - [Xcode] 
+2022-03-10 07:00:06:898 - [Xcode]     t =    95.05s     Requesting snapshot of accessibility hierarchy for app with pid 846
+2022-03-10 07:00:06:899 - [Xcode] 
+2022-03-10 07:00:07:011 - [debug] [WD Proxy] Got response with status 200: {"value":{"sessionId":"86823716-1323-4CE2-AD2E-77AF198E7327","capabilities":{"device":"iphone","browserName":"TrashCat","sdkVersion":"12.5.5","CFBundleIdentifier":"fi.altom.trashcat"}},"sessionId":"86823716-1323-4CE2-AD2E-77AF198E7327"}
+2022-03-10 07:00:07:011 - [WD Proxy] Determined the downstream protocol as 'W3C'
+2022-03-10 07:00:07:012 - [debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1646895607012 (09:00:07 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:07:012 - [debug] [BaseDriver] Event 'wdaStarted' logged at 1646895607012 (09:00:07 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:07:012 - [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2022-03-10 07:00:07:012 - [debug] [BaseDriver] Event 'orientationSet' logged at 1646895607012 (09:00:07 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:07:012 - [debug] [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+2022-03-10 07:00:07:012 - [debug] [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+2022-03-10 07:00:07:013 - [Appium] New XCUITestDriver session created successfully, session 199fb07f-68e8-42c5-a267-f0db15841b65 added to master session list
+2022-03-10 07:00:07:013 - [debug] [BaseDriver] Event 'newSessionStarted' logged at 1646895607013 (09:00:07 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:07:014 - [debug] [W3C (199fb07f)] Cached the protocol value 'W3C' for the new session 199fb07f-68e8-42c5-a267-f0db15841b65
+2022-03-10 07:00:07:014 - [debug] [W3C (199fb07f)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","udid":"11b83a7112041f4ed0a49457b626f742422822f8","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 07:00:07:017 - [HTTP] <-- POST /wd/hub/session 200 33387 ms - 536
+2022-03-10 07:00:07:018 - [HTTP] 
+2022-03-10 07:00:18:422 - [HTTP] --> DELETE /wd/hub/session/199fb07f-68e8-42c5-a267-f0db15841b65
+2022-03-10 07:00:18:422 - [HTTP] {}
+2022-03-10 07:00:18:424 - [debug] [W3C (199fb07f)] Calling AppiumDriver.deleteSession() with args: ["199fb07f-68e8-42c5-a267-f0db15841b65"]
+2022-03-10 07:00:18:425 - [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1646895618424 (09:00:18 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:18:425 - [Appium] Removing session 199fb07f-68e8-42c5-a267-f0db15841b65 from our master session list
+2022-03-10 07:00:18:427 - [debug] [WD Proxy] Matched '/session/199fb07f-68e8-42c5-a267-f0db15841b65' to command name 'deleteSession'
+2022-03-10 07:00:18:428 - [debug] [WD Proxy] Proxying [DELETE /session/199fb07f-68e8-42c5-a267-f0db15841b65] to [DELETE http://127.0.0.1:8100/session/86823716-1323-4CE2-AD2E-77AF198E7327] with no body
+2022-03-10 07:00:18:513 - [Xcode]     t =   106.65s Terminate fi.altom.trashcat:846
+2022-03-10 07:00:18:513 - [Xcode] 
+2022-03-10 07:00:19:548 - [Xcode]     t =   107.70s Wait for fi.altom.trashcat to become Not Running
+2022-03-10 07:00:19:549 - [Xcode] 
+2022-03-10 07:00:19:551 - [debug] [WD Proxy] Got response with status 200: {"value":null,"sessionId":null}
+2022-03-10 07:00:19:552 - [DevCon Factory] Releasing connections for 11b83a7112041f4ed0a49457b626f742422822f8 device on any port number
+2022-03-10 07:00:19:552 - [DevCon Factory] Found cached connections to release: ["11b83a7112041f4ed0a49457b626f742422822f8:8100"]
+2022-03-10 07:00:19:552 - [DevCon Factory] Releasing the listener for '11b83a7112041f4ed0a49457b626f742422822f8:8100'
+2022-03-10 07:00:19:552 - [debug] [iProxy@11b83a71:8100] Closing the connection
+2022-03-10 07:00:19:553 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 07:00:19:553 - [debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+2022-03-10 07:00:19:553 - [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1646895619553 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:553 - [debug] [W3C (199fb07f)] Received response: null
+2022-03-10 07:00:19:554 - [debug] [W3C (199fb07f)] But deleting session, so not returning
+2022-03-10 07:00:19:554 - [debug] [W3C (199fb07f)] Responding to client with driver.deleteSession() result: null
+2022-03-10 07:00:19:555 - [HTTP] <-- DELETE /wd/hub/session/199fb07f-68e8-42c5-a267-f0db15841b65 200 1133 ms - 14
+2022-03-10 07:00:19:555 - [HTTP] 
+2022-03-10 07:00:19:562 - [debug] [HTTP] Request idempotency key: 09afc730-8f26-427e-9420-75aa9eb6535e
+2022-03-10 07:00:19:566 - [HTTP] --> POST /wd/hub/session
+2022-03-10 07:00:19:566 - [HTTP] {"capabilities":{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]},"desiredCapabilities":{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 07:00:19:567 - [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"},null,{"firstMatch":[{"platformName":"iOS","appium:deviceName":"Local Device","appium:app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","appium:automationName":"XCUITest","appium:xcodeorgid":"59ESG8ELF5","appium:xcodesignid":"iPhone Developer"}]}]
+2022-03-10 07:00:19:568 - [debug] [BaseDriver] Event 'newSessionRequested' logged at 1646895619567 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:572 - [BaseDriver] The following capabilities are not standard capabilities and should have an extension prefix:
+2022-03-10 07:00:19:572 - [BaseDriver]   udid
+2022-03-10 07:00:19:575 - [Appium] Appium v1.22.2 creating new XCUITestDriver (v3.59.0) session
+2022-03-10 07:00:19:576 - [debug] [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2022-03-10 07:00:19:577 - [debug] [BaseDriver] Creating session with W3C capabilities: {
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]   "alwaysMatch": {
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "platformName": "iOS",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:udid": "11b83a7112041f4ed0a49457b626f742422822f8",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:deviceName": "Local Device",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:app": "/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:automationName": "XCUITest",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:xcodeorgid": "59ESG8ELF5",
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     "appium:xcodesignid": "iPhone Developer"
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]   },
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]   "firstMatch": [
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]     {}
+2022-03-10 07:00:19:577 - [debug] [BaseDriver]   ]
+2022-03-10 07:00:19:577 - [debug] [BaseDriver] }
+2022-03-10 07:00:19:582 - [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2022-03-10 07:00:19:582 - [BaseDriver]   xcodeorgid
+2022-03-10 07:00:19:582 - [BaseDriver]   xcodesignid
+2022-03-10 07:00:19:583 - [XCUITest] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+2022-03-10 07:00:19:584 - [BaseDriver] Session created with session id: 4b2fec4c-962c-4384-831e-33a67172fcc4
+2022-03-10 07:00:19:599 - [debug] [XCUITest] Current user: 'altunitytester'
+2022-03-10 07:00:19:603 - [debug] [XCUITest] Available devices: 11b83a7112041f4ed0a49457b626f742422822f8
+2022-03-10 07:00:19:604 - [debug] [XCUITest] Creating iDevice object with udid '11b83a7112041f4ed0a49457b626f742422822f8'
+2022-03-10 07:00:19:604 - [XCUITest] Determining device to run tests on: udid: '11b83a7112041f4ed0a49457b626f742422822f8', real device: true
+2022-03-10 07:00:19:661 - [XCUITest] No platformVersion specified. Using device version: '12.5.5'
+2022-03-10 07:00:19:661 - [XCUITest] Normalized platformVersion capability value '12.5.5' to '12.5'
+2022-03-10 07:00:19:666 - [debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1646895619665 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:667 - [BaseDriver] Using local app '/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa'
+2022-03-10 07:00:19:940 - [BaseDriver] Will reuse previously cached application at '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 07:00:19:940 - [debug] [BaseDriver] Event 'appConfigured' logged at 1646895619940 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:941 - [debug] [XCUITest] Checking whether app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' is actually present on file system
+2022-03-10 07:00:19:950 - [debug] [XCUITest] App is present
+2022-03-10 07:00:19:968 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 07:00:19:968 - [debug] [BaseDriver] Event 'resetStarted' logged at 1646895619968 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:969 - [debug] [XCUITest] Reset: running ios real device reset flow
+2022-03-10 07:00:19:969 - [debug] [BaseDriver] Event 'resetComplete' logged at 1646895619969 (09:00:19 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:19:969 - [WebDriverAgent] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent'
+2022-03-10 07:00:19:969 - [WebDriverAgent] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2022-03-10 07:00:20:204 - [debug] [XCUITest] Crash reports root '/Users/altunitytester/Library/Logs/CrashReporter/MobileDevice/iPhone6' does not exist. Got nothing to gather.
+2022-03-10 07:00:20:204 - [debug] [BaseDriver] Event 'logCaptureStarted' logged at 1646895620204 (09:00:20 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:20:205 - [XCUITest] Setting up real device
+2022-03-10 07:00:20:205 - [debug] [XCUITest] Verifying application platform
+2022-03-10 07:00:20:207 - [debug] [XCUITest] CFBundleSupportedPlatforms: ["iPhoneOS"]
+2022-03-10 07:00:20:474 - [debug] [XCUITest] Reset requested. Removing app with id 'fi.altom.trashcat' from the device
+2022-03-10 07:00:20:932 - [debug] [XCUITest] Installing '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app' on device with UUID '11b83a7112041f4ed0a49457b626f742422822f8'...
+2022-03-10 07:00:20:932 - [debug] [XCUITest] Using 'serial' app deployment strategy. You could change it by providing another value to the 'appInstallStrategy' capability
+2022-03-10 07:00:21:198 - [debug] [XCUITest] Getting bundle ID from app '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app': 'fi.altom.trashcat'
+2022-03-10 07:00:21:267 - [debug] [XCUITest] Successfully scanned the tree structure of '/var/folders/wv/70r64jkx3p951vrlgq54n6q40000gr/T/2022210-1056-wvm1ba.a8gh/TrashCat.app'
+2022-03-10 07:00:21:267 - [debug] [XCUITest] Got 27 folders and 126 files to push
+2022-03-10 07:00:22:407 - [debug] [WebDriverAgent] Parsed BUILD_DIR configuration value: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Build/Products'
+2022-03-10 07:00:22:407 - [debug] [WebDriverAgent] Got derived data root: '/Users/altunitytester/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu'
+2022-03-10 07:00:23:211 - [debug] [XCUITest] Successfully created the remote folder structure (28 items)
+2022-03-10 07:00:23:212 - [debug] [XCUITest] Proceeding to serial files push
+2022-03-10 07:00:42:425 - [debug] [XCUITest] Successfully pushed 27 folders and 126 files within 21227ms
+2022-03-10 07:00:42:850 - [debug] [XCUITest] A new application installation is going to be performed
+2022-03-10 07:00:43:813 - [XCUITest] App installation succeeded after 22880ms
+2022-03-10 07:00:43:813 - [debug] [XCUITest] The app has been installed successfully.
+2022-03-10 07:00:43:813 - [debug] [BaseDriver] Event 'appInstalled' logged at 1646895643813 (09:00:43 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:43:870 - [debug] [WebDriverAgent] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+2022-03-10 07:00:43:871 - [DevCon Factory] Requesting connection for device 11b83a7112041f4ed0a49457b626f742422822f8 on local port 8100, device port 8100
+2022-03-10 07:00:43:871 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 07:00:43:876 - [DevCon Factory] Successfully requested the connection for 11b83a7112041f4ed0a49457b626f742422822f8:8100
+2022-03-10 07:00:43:877 - [debug] [XCUITest] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2022-03-10 07:00:43:879 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 07:00:43:879 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 07:00:43:895 - [debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":26,"name":"iOS","sdkVersion":"15.0","version":"12.5.5"},"ios":{"ip":"192.168.1.105"},"ready":true,"build":{"upgradedAt":"1645089217065","time":"Mar  8 2022 16:17:16","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+2022-03-10 07:00:43:896 - [debug] [WebDriverAgent] Upgrade timestamp of the currently bundled WDA: 1645089217065
+2022-03-10 07:00:43:896 - [debug] [WebDriverAgent] Upgrade timestamp of the WDA on the device: 1645089217065
+2022-03-10 07:00:43:896 - [WebDriverAgent] Will reuse previously cached WDA instance at 'http://127.0.0.1:8100/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8100 if this is an undesired behavior.
+2022-03-10 07:00:43:896 - [debug] [XCUITest] Trying to start WebDriverAgent 1 times with 10000ms interval
+2022-03-10 07:00:43:896 - [debug] [XCUITest] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2022-03-10 07:00:43:896 - [debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1646895643896 (09:00:43 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:43:896 - [WebDriverAgent] Using provided WebdriverAgent at 'http://127.0.0.1:8100/'
+2022-03-10 07:00:43:897 - [debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+2022-03-10 07:00:43:897 - [debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+2022-03-10 07:00:43:904 - [debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":26,"name":"iOS","sdkVersion":"15.0","version":"12.5.5"},"ios":{"ip":"192.168.1.105"},"ready":true,"build":{"upgradedAt":"1645089217065","time":"Mar  8 2022 16:17:16","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+2022-03-10 07:00:43:904 - [debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1646895643904 (09:00:43 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:43:904 - [debug] [XCUITest] Sending createSession command to WDA
+2022-03-10 07:00:43:904 - [debug] [WD Proxy] Matched '/session' to command name 'createSession'
+2022-03-10 07:00:43:905 - [debug] [WD Proxy] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"fi.altom.trashcat","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+2022-03-10 07:00:43:926 - [Xcode]     t =   132.08s Open fi.altom.trashcat
+2022-03-10 07:00:43:926 - [Xcode] 
+2022-03-10 07:00:43:929 - [Xcode]     t =   132.09s     Launch fi.altom.trashcat
+2022-03-10 07:00:43:929 - [Xcode] 
+2022-03-10 07:00:44:365 - [Xcode] 2022-03-10 09:00:44.444928+0200 WebDriverAgentRunner-Runner[840:240298] Waiting up to 10s until fi.altom.trashcat is in idle state (including animations)
+2022-03-10 07:00:44:366 - [Xcode]     t =   132.51s         Wait for fi.altom.trashcat to idle
+2022-03-10 07:00:44:366 - [Xcode] 
+2022-03-10 07:00:47:984 - [Xcode] 2022-03-10 09:00:48.071031+0200 WebDriverAgentRunner-Runner[840:240298] Getting the most recent active application (out of 1 total items)
+2022-03-10 07:00:47:984 - [Xcode] 
+2022-03-10 07:00:47:989 - [Xcode]     t =   136.14s Find the Application 'fi.altom.trashcat'
+2022-03-10 07:00:47:989 - [Xcode] 
+2022-03-10 07:00:47:993 - [Xcode]     t =   136.15s     Requesting snapshot of accessibility hierarchy for app with pid 850
+2022-03-10 07:00:47:993 - [Xcode] 
+2022-03-10 07:00:48:033 - [debug] [WD Proxy] Got response with status 200: {"value":{"sessionId":"1629D3EA-7B2D-4416-8001-70E5FCD12578","capabilities":{"device":"iphone","browserName":"TrashCat","sdkVersion":"12.5.5","CFBundleIdentifier":"fi.altom.trashcat"}},"sessionId":"1629D3EA-7B2D-4416-8001-70E5FCD12578"}
+2022-03-10 07:00:48:034 - [WD Proxy] Determined the downstream protocol as 'W3C'
+2022-03-10 07:00:48:034 - [debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1646895648034 (09:00:48 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:48:034 - [debug] [BaseDriver] Event 'wdaStarted' logged at 1646895648034 (09:00:48 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:48:034 - [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2022-03-10 07:00:48:034 - [debug] [BaseDriver] Event 'orientationSet' logged at 1646895648034 (09:00:48 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:48:034 - [debug] [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+2022-03-10 07:00:48:034 - [debug] [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+2022-03-10 07:00:48:035 - [Appium] New XCUITestDriver session created successfully, session 4b2fec4c-962c-4384-831e-33a67172fcc4 added to master session list
+2022-03-10 07:00:48:035 - [debug] [BaseDriver] Event 'newSessionStarted' logged at 1646895648035 (09:00:48 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:00:48:036 - [debug] [W3C (4b2fec4c)] Cached the protocol value 'W3C' for the new session 4b2fec4c-962c-4384-831e-33a67172fcc4
+2022-03-10 07:00:48:036 - [debug] [W3C (4b2fec4c)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","udid":"11b83a7112041f4ed0a49457b626f742422822f8","deviceName":"Local Device","app":"/Users/altunitytester/ios-build-with-python-tests/app/TrashCat.ipa","automationName":"XCUITest","xcodeorgid":"59ESG8ELF5","xcodesignid":"iPhone Developer"}}
+2022-03-10 07:00:48:039 - [HTTP] <-- POST /wd/hub/session 200 28471 ms - 536
+2022-03-10 07:00:48:040 - [HTTP] 
+2022-03-10 07:00:49:550 - [iProxy@11b83a71:8100] The connection has been closed
+2022-03-10 07:01:00:799 - [HTTP] --> DELETE /wd/hub/session/4b2fec4c-962c-4384-831e-33a67172fcc4
+2022-03-10 07:01:00:799 - [HTTP] {}
+2022-03-10 07:01:00:801 - [debug] [W3C (4b2fec4c)] Calling AppiumDriver.deleteSession() with args: ["4b2fec4c-962c-4384-831e-33a67172fcc4"]
+2022-03-10 07:01:00:802 - [debug] [BaseDriver] Event 'quitSessionRequested' logged at 1646895660802 (09:01:00 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:01:00:802 - [Appium] Removing session 4b2fec4c-962c-4384-831e-33a67172fcc4 from our master session list
+2022-03-10 07:01:00:804 - [debug] [WD Proxy] Matched '/session/4b2fec4c-962c-4384-831e-33a67172fcc4' to command name 'deleteSession'
+2022-03-10 07:01:00:805 - [debug] [WD Proxy] Proxying [DELETE /session/4b2fec4c-962c-4384-831e-33a67172fcc4] to [DELETE http://127.0.0.1:8100/session/1629D3EA-7B2D-4416-8001-70E5FCD12578] with no body
+2022-03-10 07:01:00:862 - [Xcode]     t =   149.02s Terminate fi.altom.trashcat:850
+2022-03-10 07:01:00:862 - [Xcode] 
+2022-03-10 07:01:01:901 - [Xcode]     t =   150.06s Wait for fi.altom.trashcat to become Not Running
+2022-03-10 07:01:01:902 - [Xcode] 
+2022-03-10 07:01:01:907 - [debug] [WD Proxy] Got response with status 200: {"value":null,"sessionId":null}
+2022-03-10 07:01:01:907 - [DevCon Factory] Releasing connections for 11b83a7112041f4ed0a49457b626f742422822f8 device on any port number
+2022-03-10 07:01:01:907 - [DevCon Factory] Found cached connections to release: ["11b83a7112041f4ed0a49457b626f742422822f8:8100"]
+2022-03-10 07:01:01:907 - [DevCon Factory] Releasing the listener for '11b83a7112041f4ed0a49457b626f742422822f8:8100'
+2022-03-10 07:01:01:908 - [debug] [iProxy@11b83a71:8100] Closing the connection
+2022-03-10 07:01:01:908 - [debug] [DevCon Factory] Cached connections count: 0
+2022-03-10 07:01:01:908 - [debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+2022-03-10 07:01:01:909 - [debug] [BaseDriver] Event 'quitSessionFinished' logged at 1646895661909 (09:01:01 GMT+0200 (Eastern European Standard Time))
+2022-03-10 07:01:01:909 - [debug] [W3C (4b2fec4c)] Received response: null
+2022-03-10 07:01:01:909 - [debug] [W3C (4b2fec4c)] But deleting session, so not returning
+2022-03-10 07:01:01:909 - [debug] [W3C (4b2fec4c)] Responding to client with driver.deleteSession() result: null
+2022-03-10 07:01:01:910 - [HTTP] <-- DELETE /wd/hub/session/4b2fec4c-962c-4384-831e-33a67172fcc4 200 1111 ms - 14
+2022-03-10 07:01:01:910 - [HTTP] 
+2022-03-10 07:01:01:998 - [Xcode] ** BUILD INTERRUPTED **
+2022-03-10 07:01:01:998 - [Xcode] 
+2022-03-10 07:01:02:028 - [WebDriverAgent] xcodebuild exited with code 'null' and signal 'SIGTERM'
+2022-03-10 07:01:02:069 - [iProxy@11b83a71:8100] The connection has been closed

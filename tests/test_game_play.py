@@ -8,13 +8,13 @@ from .pages.get_another_chance_page import GetAnotherChancePage
 class TestGamePlay(AltUnityTestCase):
 
     def setUp(self):
-        self.main_menu_page = MainMenuPage(self.altdriver)
+        self.main_menu_page = MainMenuPage(self.altdriver, self.appium_driver)
         self.main_menu_page.load()
         self.main_menu_page.press_run()
 
-        self.game_play_page = GamePlayPage(self.altdriver)
-        self.pause_overlay_page = PauseOverlayPage(self.altdriver)
-        self.get_another_chance_page = GetAnotherChancePage(self.altdriver)
+        self.game_play_page = GamePlayPage(self.altdriver, self.appium_driver)
+        self.pause_overlay_page = PauseOverlayPage(self.altdriver, self.appium_driver)
+        self.get_another_chance_page = GetAnotherChancePage(self.altdriver, self.appium_driver)
 
     def test_game_play_page_displayed_correctly(self):
         assert self.game_play_page.is_displayed()
@@ -32,11 +32,11 @@ class TestGamePlay(AltUnityTestCase):
         assert self.main_menu_page.is_displayed()
 
     def test_avoiding_obstacles(self):
-        self.game_play_page.avoid_obstacles(5)
+        self.game_play_page.avoid_obstacles(10)
         assert self.game_play_page.get_current_life() > 0
 
     def test_player_dies_when_obstacles_not_avoided(self):
-        timeout = 10
+        timeout = 20
         while timeout > 0:
             try:
                 self.get_another_chance_page.is_displayed()

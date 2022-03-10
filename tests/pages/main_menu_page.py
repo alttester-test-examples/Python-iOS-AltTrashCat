@@ -1,14 +1,11 @@
-import time
-
-from altunityrunner import By
-
 from .base_page import BasePage
-
+from altunityrunner import By
+from time import sleep
 
 class MainMenuPage(BasePage):
 
-    def __init__(self, altdriver):
-        super().__init__(altdriver)
+    def __init__(self, altdriver, appium_driver):
+        BasePage.__init__(self, altdriver, appium_driver)
 
     def load(self):
         self.altdriver.load_scene('Main')

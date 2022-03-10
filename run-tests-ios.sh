@@ -1,27 +1,45 @@
 #!/bin/bash
 
-echo "==> Print decives."
-instruments -s devices
+echo "==> Installing dependencies"
+chmod 0755 requirements.txt
+python3 -m pip install -r requirements.txt
 
-# echo "==> Installing a clean build of Endless Runner:"
-# xcodebuild clean build-for-testing -scheme Unity-iPhone -destination generic/platform=iOS
-# xcodebuild test-without-building -destination "platform=iOS,id=$DEVICE_UDID" -scheme Unity-iPhone &
+#########################################################
+#
+# Preparing to start Appium
+# - UDID is the device ID on which test will run and
+#   required parameter on iOS test runs
+# - appium - is a wrapper tha calls the latest installed
+#   Appium server. Additional parameters can be passed
+#   to the server here.
+#
+#########################################################
 
-# echo "==> Installing dependencies"
-# chmod 0755 requirements.txt
-# python3 -m pip install -r requirements.txt
+echo "===> UDID set to ${IOS_UDID}"
+echo "===> Starting Appium ..."
+appium -U ${IOS_UDID} --log-no-colors --log-timestamp  --command-timeout 180  > appium.log 2>&1 &
+sleep 10
+ps -ef|grep appium
 
-# echo "==> Port forwarding to 13000:"
-# iproxy 13000 13000 $DEVICE_UDID &
-# sleep 60
+## Desired capabilities:
+export APPIUM_APPFILE="$PWD/app/TrashCat.ipa"
+export APPIUM_URL="http://localhost:4723/wd/hub"
+export APPIUM_DEVICE="Local Device"
+export APPIUM_PLATFORM="iOS"
+export APPIUM_AUTOMATION="XCUITest"
+export APPIUM_XCODEORGID="59ESG8ELF5"
+export APPIUM_XCODESIGNID="iPhone Developer"
 
-# cd "../../alttrashcatj"
-# dotnet restore
+## check iproxy
+iproxy --version
 
-# echo "==> Run tests"
-# rm -rf screenshots
-# python3 -m pytest tests/ -s
+## Run the tests
+echo "===> Running tests"
+rm -rf screenshots
+python3 -m pytest tests/ -s
+
+echo "===> Tests done"
 
 # echo "==> Killing existing xcode processes:"
-# killall xcodebuild || true
-# killall iproxy
+killall xcodebuild || true
+killall iproxy
