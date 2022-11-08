@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.path.dirname(__file__))
 
-from altunityrunner import AltUnityDriver
+from alttester import AltDriver
 import unittest
 import pytest
 
@@ -12,7 +12,7 @@ class TestBase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.altdriver = AltUnityDriver()
+        cls.altdriver = AltDriver()
 
     @classmethod    
     def tearDownClass(cls):
