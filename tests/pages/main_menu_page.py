@@ -1,6 +1,6 @@
 from .base_page import BasePage
-from altunityrunner import By
-from time import sleep
+from alttester import By
+import time 
 
 class MainMenuPage(BasePage):
 

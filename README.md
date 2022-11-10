@@ -1,6 +1,6 @@
 # Python - iOS - AltTrashCat
 
-This repository shows a few Python tests that use the page object model and AltUnityTester to test the Unity endless runner sample:
+This repository shows a few Python tests that use the page object model and AltTester Unity SDK to test the Unity endless runner sample:
 https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runner-sample-game-87901
 
 ### Before running the tests on iOS
@@ -11,7 +11,9 @@ https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runne
 
 > **Note**: The tests are meant to be run on an iOS device.
 
-The app is provided in this repository, in `app/TrashCat.ipa`. To start the tests run:
+Create a folder `app` under project.
+The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCat.ipa.zip and needs to be included unzipped under app/ folder.
+To start the tests run:
 
 ```
 $ ./run-tests-ios.sh

@@ -1,4 +1,4 @@
-altunityrunner==1.7.0
+AltTester-Driver==1.8.0
 selenium
 pytest
 pytest-selenium

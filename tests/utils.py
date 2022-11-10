@@ -4,12 +4,13 @@ import time
 import os
 from appium import webdriver
 
-from altunityrunner.alt_unity_port_forwarding import AltUnityPortForwarding
-from altunityrunner import AltUnityDriver
+from alttester.portforwarding import AltPortForwarding
+from alttester import AltDriver
 
 sys.path.append(os.path.dirname(__file__))
 
-class AltUnityTestCase(unittest.TestCase):
+
+class AltTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -25,16 +26,16 @@ class AltUnityTestCase(unittest.TestCase):
         print("Appium driver started")
         cls.setup_port_forwarding()
         time.sleep(10)
-        cls.altdriver = AltUnityDriver(enable_logging=False)
+        cls.altdriver = AltDriver(enable_logging=False)
 
     @classmethod
     def setup_port_forwarding(cls):
         try:
-            AltUnityPortForwarding.kill_all_iproxy_process()
+            AltPortForwarding.kill_all_iproxy_process()
         except:
             print("No iproxy forward was present")
-        AltUnityPortForwarding.forward_ios()
-        print("Port forwarded (iOS).") 
+        AltPortForwarding.forward_ios()
+        print("Port forwarded (iOS).")
 
     @classmethod
     def tearDownClass(cls):
