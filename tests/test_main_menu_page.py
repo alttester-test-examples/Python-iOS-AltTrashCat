@@ -1,4 +1,4 @@
-from .utils import AltTestCase
+from .alt_test_case import AltTestCase
 from .pages.main_menu_page import MainMenuPage
 
 

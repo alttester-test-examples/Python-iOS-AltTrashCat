@@ -1,4 +1,4 @@
-from .utils import AltTestCase
+from .alt_test_case import AltTestCase
 from .pages.main_menu_page import MainMenuPage
 from .pages.game_play_page import GamePlayPage
 from .pages.pause_overlay_page import PauseOverlayPage
@@ -13,8 +13,10 @@ class TestGamePlay(AltTestCase):
         self.main_menu_page.press_run()
 
         self.game_play_page = GamePlayPage(self.altdriver, self.appium_driver)
-        self.pause_overlay_page = PauseOverlayPage(self.altdriver, self.appium_driver)
-        self.get_another_chance_page = GetAnotherChancePage(self.altdriver, self.appium_driver)
+        self.pause_overlay_page = PauseOverlayPage(
+            self.altdriver, self.appium_driver)
+        self.get_another_chance_page = GetAnotherChancePage(
+            self.altdriver, self.appium_driver)
 
     def test_game_play_page_displayed_correctly(self):
         assert self.game_play_page.is_displayed()
