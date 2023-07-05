@@ -26,6 +26,7 @@ class AltTestCase(unittest.TestCase):
         cls.appium_driver = webdriver.Remote(
             'http://localhost:4723/wd/hub', cls.desired_caps)
         print("Appium driver started")
+        time.sleep(10)
         cls.altdriver = AltDriver(enable_logging=False)
 
     @classmethod
